@@ -1,0 +1,79 @@
+@media print{
+    @page {
+        size: A4 portrait;
+        padding: 1cm;
+        margin: 1cm auto;
+        page-break-after: always;
+    }
+    #footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 30mm;
+        margin-bottom:0px;
+        width: 100%
+    }
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    #toolbar{display: none}
+
+}
+/*style chỉnh*/
+
+td.td1 img {
+    width:  4cm;
+    height:  6cm;
+    border: 1px solid black;
+}
+
+td {
+    padding: 10px 0px;
+}
+td.td-header {
+    width:  40%;
+    float:  left;
+}
+
+table.gridPrinttable {
+    border-collapse: separate;
+    border :  0px solid #000000;
+    border-spacing: 0;
+    font-size: 12pt;
+    width: 100%;
+    border-color:  #000000 ;
+    border-left: 1px solid;
+
+}
+table.gridPrinttable tr {
+    border-color:  #000000 ;
+    border-style: none ;
+    border-width: 0 ;
+    page-break-inside:avoid; page-break-after:auto
+}
+table.gridPrinttable td {
+    border-color:  #000000 ;
+    border-right: 1px solid;
+    border-top:1px solid ;
+    border-bottom:1px solid ;
+    padding:4px;
+}
+
+table.gridPrinttable th {
+    border-color:  #000000 ;
+    border-right: 1px solid;
+    border-top:1px solid ;
+    padding:5px;
+    text-align:center;
+}
+table.gridPrinttable tfoot td {
+    border-color:  #000000 ;
+    border-right: 1px solid;
+    border-top:1px solid ;
+    border-bottom:1px solid ;
+    padding:4px;
+    font-weight:bold;
+}
+
+
